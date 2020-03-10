@@ -354,9 +354,6 @@ body {
         padding: 100px 0;
         margin: 0 -30px;
 }
-.info-box-first__image {
-        /* flex: 0 0 600px; */
-}
 
 /* OUR-SERVICES */
 .our-services__section {
@@ -642,8 +639,6 @@ body {
         padding: 0 26px;
         width: 100%;
         display: none;
-}
-.info-box-three__map-image:hover {
 }
 .info-box-three__map-link:active {
         transform: scale(0.99);

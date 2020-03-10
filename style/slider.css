@@ -71,10 +71,6 @@
 .slider .slick-slide {
   padding: 0 17px;
 }
-
-.slider .slick-track {
-  /* display: block; */
-}
 .slider .slick-arrow {
   position: absolute;
   top: 30%;
@@ -119,16 +115,10 @@
   border: 1px solid #fff;
 }
 .slider__item {
-  /* opacity: .4; */
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.slider__item-wrap {
-}
-/* .slider__item.slick-center {
-  opacity: 1;
-}*/
 
 
 .sliderbig__item {
@@ -137,9 +127,6 @@
 .bigimg{
   width: 600px;
 }
-/* img {
-  width: 200px;
-} */
 .link_add {
   color: #fff;
 }
