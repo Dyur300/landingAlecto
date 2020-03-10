@@ -45,8 +45,6 @@
           box-sizing: border-box;
           flex: 1 1 47%;
           padding: 20px 10px 20px 10px;
-          /* box-shadow: 1px 3px 15px #e6e6e648; */
-          background-color: ;
           margin: 7px;
         }
         .about-us__icon {
@@ -759,9 +757,11 @@
           height: 50px;
           background-color: #17daa007;
           border-bottom: 1px solid #17daa1;
+          display: none;
           opacity: 0;
         }
         .search__txt.active {
+          display: block;
           opacity: 1;
           top: 150%;
 
