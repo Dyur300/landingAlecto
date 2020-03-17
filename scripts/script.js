@@ -127,31 +127,65 @@ $(".search__btn").click(function(){
   $("input[type='text']").focus();
 });
 
+$(document).ready(function(){
+  $('.pricing__items').click(function(event){
+    $('.pricing__more-btn').removeClass('active');
+    $('.pricing__more-btn', this).toggleClass('active');
+  });
+});
+
+$(document).ready(function(){
+  $('.pricing__items').click(function(){
+    $('.pricing__text', this).toggleClass('active');
+  });
+});
+
+$(document).ready(function(){
+  $('.pricing__text').click(function(){
+    $('.pricing__more-btn').removeClass('active');
+  });
+});
 
 
-$(".mr-btn1").click(function(){
-  $(".mr-txt1").toggleClass('active');
-  $(".mr-txt4, .mr-txt2, .mr-txt3").removeClass('active');
+$(document).mouseup(function (e){  
+  var div = $(".pricing__text");  //класс элемента вне которого клик
+  if (!div.is(e.target) && div.has(e.target).length === 0) {  
+          div.removeClass('active');  
+  }
 });
-$(".mr-btn2").click(function(){
-  $(".mr-txt2").toggleClass('active');
-  $(".mr-txt1, .mr-txt4, .mr-txt3").removeClass('active');
+
+$(document).mouseup(function (e){  
+  var div = $(".pricing__more-btn");  //класс элемента вне которого клик
+  if (!div.is(e.target) && div.has(e.target).length === 0) {  
+          div.removeClass('active');  
+  }
 });
-$(".mr-btn3").click(function(){
-  $(".mr-txt3").toggleClass('active');
-  $(".mr-txt1, .mr-txt2, .mr-txt4").removeClass('active')
-});
-$(".mr-btn4").click(function(){
-  $(".mr-txt4").toggleClass('active');
-  $(".mr-txt1, .mr-txt2, .mr-txt3").removeClass('active');
-});
-$(".pricing__more-btn").click(function(){
-  $(".pricing__more-btn").removeClass('active');
-  $(this).toggleClass('active');
-  // $(this).removeClass('active');
-  // $(this).toggleClass('active');
-  // $(this).toggleClass('active');
-});
+
+
+
+// $(".mr-btn1").click(function(){
+//   $(".mr-txt1").toggleClass('active');
+//   $(".mr-txt4, .mr-txt2, .mr-txt3").removeClass('active');
+// });
+// $(".mr-btn2").click(function(){
+//   $(".mr-txt2").toggleClass('active');
+//   $(".mr-txt1, .mr-txt4, .mr-txt3").removeClass('active');
+// });
+// $(".mr-btn3").click(function(){
+//   $(".mr-txt3").toggleClass('active');
+//   $(".mr-txt1, .mr-txt2, .mr-txt4").removeClass('active')
+// });
+// $(".mr-btn4").click(function(){
+//   $(".mr-txt4").toggleClass('active');
+//   $(".mr-txt1, .mr-txt2, .mr-txt3").removeClass('active');
+// });
+// $(".pricing__more-btn").click(function(){
+//   $(".pricing__more-btn").removeClass('active');
+//   $(this).toggleClass('active');
+//   // $(this).removeClass('active');
+//   // $(this).toggleClass('active');
+//   // $(this).toggleClass('active');
+// });
 
 
 $(document).ready(function() {
@@ -169,6 +203,53 @@ $(document).ready(function() {
   });
 });
 
+
+$(document).ready(function(){
+  $('.meet-our-team__items', this).click(function(event){
+    $('.meet-our-team__overlay', this).toggleClass('active');
+  });
+});
+
+$(document).mouseup(function (e){  
+  var div = $(".meet-our-team__overlay");  //класс элемента вне которого клик
+  if (!div.is(e.target) && div.has(e.target).length === 0) {  
+          div.removeClass('active');  
+  }
+});
+
+
+$(document).ready(function(){
+  var header = $('.header'),
+  scrollPrev = 0;
+
+$(window).scroll(function() {
+var scrolled = $(window).scrollTop();
+
+if ( scrolled > 100 && scrolled > scrollPrev ) {
+  header.addClass('out');
+} else {
+  header.removeClass('out');
+}
+
+scrollPrev = scrolled;
+});
+});
+$(document).ready(function(){
+  var header = $('.search__form'),
+  scrollPrev = 0;
+
+$(window).scroll(function() {
+var scrolled = $(window).scrollTop();
+
+if ( scrolled > 100 && scrolled > scrollPrev ) {
+  header.addClass('out');
+} else {
+  header.removeClass('out');
+}
+
+scrollPrev = scrolled;
+});
+});
 
 
 

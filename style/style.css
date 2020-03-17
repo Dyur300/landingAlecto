@@ -20,7 +20,7 @@ body {
 
 .header__section {
         min-height: 984px;
-        background-image: url(/img/header-background.jpg);
+        background-image: url(../img/header-background.jpg);
         background-size: cover;
 }
 .header__overlay {
@@ -273,8 +273,11 @@ body {
         line-height: 30px;
         letter-spacing: 0.45px;
 }
-
+.more-btn {
+        display: inline-block;
+}
 .more-btn__link {
+        display: inline-block;
         padding: 17px 54px;
         color: #ffffff;
         background-color:#17daa3;
@@ -306,14 +309,20 @@ body {
 }
 .info-box__image {
         /* flex: 0 0 637px; */
-        flex: 0 0 50%;
+        width: 50%;
         padding: 0 30px;
 }
+.inb-1-img {
+        float: left;
+}
+.inb-2-img {
+        float: right;
+}
 .info-box-first__row {
-        display: flex;
+        display: block;
         align-items: center;
         flex-wrap: wrap;
-        padding: 100px 0;
+        padding: 100px 25px;
         margin: 0 -30px;
 }
 .info-box img {
@@ -347,14 +356,12 @@ body {
         background-color: none;
 }
 .info-box-second__row {
-        display: flex;
-        flex-direction: row-reverse;
+        display: block;
         flex-wrap: wrap;
         align-items: center;
-        padding: 100px 0;
+        padding: 100px 25px;
         margin: 0 -30px;
 }
-
 /* OUR-SERVICES */
 .our-services__section {
         padding: 80px 0 120px 0;
@@ -602,21 +609,20 @@ body {
 .info-box-three__container {
         max-width: 1474px;
         margin: 0 auto;
-        padding: 0 25px;
-}
-.info-box-three__wrap {
-        padding: 100px 0 150px 0;
+        padding: 0 0px;
 }
 
 .info-box-three__row {
-        display: flex;
+        display: block;
         flex-direction: row-reverse;
         justify-content: space-between;
         margin: 0 -26px;
+        padding: 100px 25px;
         align-items: center;
 }
 .info-box-three__map-link {
         width: 50%;
+        float: left;
 }
 .info-box-three__map-link img {
         max-width: 100%;
@@ -654,7 +660,7 @@ body {
 
 
 .try-our-template__wrap {
-        background-image: url(/img/Try\ our\ template.png);
+        background-image: url(../Try_our_template.png);
         background-size: cover;
         background-repeat: no-repeat;
 }
@@ -706,7 +712,7 @@ body {
         margin: 0 auto;
 }
 .footer__background {
-        background-image: url(/img/Vector\ Smart\ Object\ copy.png);
+        background-image: url(../Vector_Smart_Object_copy.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;

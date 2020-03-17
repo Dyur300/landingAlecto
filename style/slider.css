@@ -83,11 +83,11 @@
 }
 .slider .slick-arrow.slick-prev{
   left: 0;
-  background: url('/img/Arrow-Left-icon.png') 0 0 / 100% no-repeat;
+  background: url('../img/Arrow-Left-icon.png') 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url('/img/Arrow-Right-icon.png') 0 0 / 100% no-repeat;
+  background: url('../img/Arrow-Right-icon.png') 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-disabled {
   opacity: 0.2;
@@ -180,7 +180,7 @@
 
 
 .slidertwo-wrapper {
-        background-image: url(/img/Photo2.png);
+        background-image: url(../img/Photo2.png);
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -220,7 +220,6 @@
         position: relative;
 }
 .slidertwo__image {
-        background: url('/img/Photo\ Adam\ Czajkowski.pn') 0 0 / 100% no-repeat;
         width: 104px;
         height: 104px;
         transition: .3s;
@@ -263,11 +262,11 @@
 }
 .slidertwo .slick-arrow.slick-prev{
   left: 0;
-  background: url('/img/Arrow-Left-icon.png') 0 0 / 100% no-repeat;
+  background: url('../img/Arrow-Left-icon.png') 0 0 / 100% no-repeat;
 }
 .slidertwo .slick-arrow.slick-next {
   right: 0;
-  background: url('/img/Arrow-Right-icon.png') 0 0 / 100% no-repeat;
+  background: url('../img/Arrow-Right-icon.png') 0 0 / 100% no-repeat;
 }
 .slidertwo .slick-dots {
   display: flex;
