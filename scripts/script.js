@@ -135,13 +135,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.pricing__items').click(function(){
+  $('.pricing__items').click(function(event){
     $('.pricing__text', this).toggleClass('active');
   });
 });
 
 $(document).ready(function(){
-  $('.pricing__text').click(function(){
+  $('.pricing__text').click(function(event){
     $('.pricing__more-btn').removeClass('active');
   });
 });
