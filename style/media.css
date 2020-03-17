@@ -244,11 +244,11 @@
         }
         .info-box .more-btn__link {
           position: absolute;
-          left: 36%;
+          left: 40%;
         }
         .info-box-three .more-btn__link {
           position: absolute;
-          left: 36%;
+          left: 38%;
         }
         .info-box__text {
           line-height: 30px;
@@ -305,6 +305,10 @@
         .container {
           padding: 0 3%;
         }
+        .more-btn__link {
+          padding: 13px 34px;
+          font-size: 12px;
+        }
 }
 @media (max-width:750px) {
         .meet-our-team__items {
@@ -329,10 +333,10 @@
 }
 @media (max-width:700px) {
         .info-box-three__map-link {
-          width: 50%;
+          width: 55%;
         }
         .info-box__image {
-          width: 40%;
+          width: 55%;
         }
         .info-box__title {
           font-size: 30px;
