@@ -41,7 +41,17 @@ body {
         align-items: center;        
         position: relative;
 }
-
+.header__logo-txt {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 35px;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 2px;
+}
+.header__logo-txt span {
+        font-size: 40px;
+        color: #17daa3;
+}
 .header__burger {
         display: none;
 }

@@ -197,6 +197,16 @@
         .info-box-three__row {
           padding: 80px 20px;
         }
+        .header__logo-txt {
+          font-family: 'Quicksand', sans-serif;
+          font-size:38px;
+          color: #fff;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+        .header__logo-txt span {
+          font-size: 50px;
+        }
         .meet-our-team__overlay {
           display: none;
           opacity: 0;
